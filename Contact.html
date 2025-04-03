@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - IWB</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background: url('contact-bg.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            text-align: center;
+        }
+        header {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            font-size: 28px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: rgba(0, 0, 0, 0.9);
+            padding: 15px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            padding: 12px 18px;
+            font-size: 18px;
+            border-radius: 5px;
+            transition: 0.3s ease-in-out;
+        }
+        nav a:hover {
+            background: #28a745;
+            transform: scale(1.1);
+        }
+        .contact-container {
+            margin-top: 40px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            display: inline-block;
+            border-radius: 10px;
+        }
+        .contact-container h2 {
+            margin-bottom: 15px;
+        }
+        .contact-container input, .contact-container textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+        .contact-container textarea {
+            height: 100px;
+        }
+        .contact-container button {
+            background: #28a745;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        .contact-container button:hover {
+            background: #218838;
+            transform: scale(1.1);
+        }
+        .social-icons {
+            margin-top: 20px;
+        }
+        .social-icons a {
+            color: white;
+            margin: 0 10px;
+            font-size: 30px;
+            transition: 0.3s;
+        }
+        .social-icons a:hover {
+            color: #28a745;
+            transform: scale(1.1);
+        }
+        footer {
+            background: rgba(0, 0, 0, 0.9);
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        Contact Us - IWB
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="tools.html">Software Tools</a>
+        <a href="stakeholders.html">Stakeholders</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="contact-container">
+        <h2>Get in Touch</h2>
+        <form action="submit_form.php" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+    <div class="social-icons">
+        <a href="https://www.facebook.com/YourPage" target="_blank" class="fab fa-facebook-square"></a>
+        <a href="https://twitter.com/YourProfile" target="_blank" class="fab fa-twitter-square"></a>
+        <a href="https://www.linkedin.com/in/YourProfile" target="_blank" class="fab fa-linkedin"></a>
+        <a href="https://www.instagram.com/YourProfile" target="_blank" class="fab fa-instagram"></a>
+    </div>
+
+    <div>
+    <footer>
+        &copy; 2025 IWB |
+        <div class="social">
+            <a href="#"><i class="fab fa-facebook"></i> Facebook</a> |
+            <a href="#"><i class="fab fa-twitter"></i> Twitter</a> |
+            <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        </div>
+    </footer>
+	</div>
+
+</body>
+</html>
